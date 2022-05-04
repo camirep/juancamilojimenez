@@ -1,0 +1,479 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    font-size: 62.5%;
+}
+
+header{
+    width:100%;
+    height: 72px;
+    background-color: #DA291C;
+    display: flex;
+    align-items: center;
+}
+
+header .img{
+    width: 203px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.banner{
+    width: 100%;
+    
+}
+
+.banner .banner-img{
+    background-image: url(../img/shutterstock_1538297585\ 1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 38vh;
+    max-width: 425px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.banner .banner-img .banner-title{
+    width: 331px;
+    height:169px;
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    color: white;
+    padding-top: 18px;
+    padding-bottom:15px;
+    padding-left:26px;
+    padding-right:26px;
+}
+
+.banner-title h1{
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 9px;
+}
+
+.banner-title h2{
+    font-size: 1.8rem;
+    font-weight: 700 bold;
+}
+
+.buscador{
+    width: 100%;
+   
+    border: 1px solid #E2E8EE;
+}
+
+.buscador form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.buscador form .radios{
+    width: 100%;
+    margin-bottom: 48px;
+}
+
+
+
+.container-fluid{
+    border: 2px solid #E2E8EE;
+    margin: 2rem;
+    padding: 53px 30px 53px 30px;
+}
+
+.container-fluid h1{
+    font-weight: 900 ,bold;
+    font-size: 2.4rem;
+    margin-bottom:4rem;
+}
+
+.container-fluid form #label{
+    font-size: 1.6rem;
+    font-weight: 700 ;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.container-fluid form label{
+    font-weight: 700 ;
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+}
+
+form .input-group {
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding-left: 1.4rem;
+    height: 3.2rem;
+    margin-bottom: 4.8rem;
+    width: 100%;
+}
+
+form img {
+    width: 45px;
+    margin-bottom: 4.8rem;
+}
+
+form .imagen-cambio{
+    display: flex;
+    justify-content:center;
+}
+
+
+form .ancla {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #96172E;
+    font-weight: 700;
+}
+
+form #img-circle{
+    width: 16px;
+    height: 16px;
+    background: #96172E;
+    margin-bottom: 0;
+    padding: 2px;
+    border-radius: 100%;
+    
+}
+
+form .inputs{
+    width: 100%;
+}
+
+form .boton{
+    margin-top: 5rem;
+    width: 100%;
+    height: 4.4rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #DA291C;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.recomendacion{
+    margin-top: 6.4rem;
+    
+    padding: 0px 29px 0px 29px;
+   
+}
+
+.recomendacion .title-recomendacion{
+    text-align: center;
+    font-size: 3.0rem;
+}
+
+.recomendacion  #ancla-recomendacion{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #96172E;
+    margin-top: 1.8rem;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 3.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 6rem;
+    
+   
+}
+.card-padre{
+    display:flex; 
+    overflow-x: scroll; 
+    overscroll-behavior-x: contain; 
+    scroll-snap-type: x proximity; 
+    gap: 1.2rem;
+    scroll-snap-align: center;
+}
+
+.cards .card-tal{
+    border: 1px solid #E2E8EE;
+    border-radius: 5px;
+}
+
+.cards .viajes{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.viajes .flechas{
+    background-image: url(../icon/Arrow.png);
+    height:32px;
+    width:34px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.viajes h1{
+    font-size: 2.2rem;
+    padding-right: 1rem;
+}
+
+.viajes p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #979797;
+}
+
+.precios {
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+.precios h2{
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.precios .valor{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+
+.valor h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+.valor p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+.especificar{
+    display: flex;
+}
+.precios .especificar .avion{
+    background-image: url(../icon/avion.png);
+    height:16px;
+    width:16px;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.precios .especificar p{
+     font-size: 1.2rem;
+     font-weight: 400;
+     color: #979797;
+     margin-left: 0.6rem;
+}
+
+.btn button{
+    width: 100%;
+    height: 45px;
+    margin-top: 1.5rem;
+    border: none;
+    background-color: #da291c;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 2.3rem;
+    border-radius: 5px;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.acceso{
+    width: 100%;
+    height: 100%;
+    background-color: #FAFAFA;
+    padding-top: 6.8rem;
+    padding-bottom: 5.6rem;
+}
+
+.acceso .title-acceso{
+    text-align: center;
+    font-size: 3.0rem;
+    font-weight: 700;
+}
+
+
+.acceso .enlace-padre{
+    display: flex;
+    justify-content: center;
+    margin-top: 5.6rem;
+    padding: 2.6rem;
+}
+
+.enlace-padre .programas h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.enlace-padre .programas p{
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top:1.6rem;
+    margin-bottom: 1.6rem;
+}
+
+.enlace-padre .programas a{
+    font-size: 1.4rem;
+    color: #96172e;
+    font-weight: 600;
+}
+
+.enlace-padre .programas a img{
+    margin-left: 1.5rem;
+}
+.acceso .img-enlaces{
+    background-image: url(../icon/avionjejej.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:52px;
+    height:19px;
+    margin-right:2.4rem;
+    
+}
+
+.enlace-padre .lupa{
+    background-image: url(../icon/lupa.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:58px;
+    height:21px;
+    margin-right:2.4rem;
+}
+
+.enlace-padre .contra{
+    background-image: url(../icon/start.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width:52px;
+    height:17px;
+    margin-right:2.4rem;
+}
+.informacion{
+    padding: 69px 20px 69px 20px;
+    width: 100%;
+
+}
+.informacion .title-informacion .title-h1{
+    font-weight:700;
+    font-size:3.0rem;
+    text-align: center;
+    margin-bottom:5.6rem;
+    color: #323237;
+}
+
+.informacion .targeta-info{
+    padding: 32px;
+    border:1px solid #E2E8EE;
+    border-radius: 3px;
+    margin-top: 3.2rem;
+}
+
+.targeta-info h1{
+    font-weight:700;
+    font-size:2.2rem;
+    color: #323237;
+    margin-bottom:1.6rem;
+}
+
+.targeta-info p {
+    font-weight:400;
+    font-size: 1.4rem;
+    margin-bottom:1.6rem;
+    color: #323237;
+}
+
+.targeta-info button{
+    width: 100%;
+    height: 45px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 2px solid black;
+    color: #323237;
+    border-radius: 5px;
+    
+}
+
+.section-corporate{
+    background-color:#FAFAFA;
+    padding: 56px 50px 40px 40px;
+}
+
+.section-corporate h1 {
+    font-weight:700;
+    font-size: 2.4rem;
+    color: #DA291C;
+    margin-bottom:1.9rem;
+    margin-top: 2.4rem;
+}
+
+.section-corporate p{
+    font-weight:400;
+    font-size: 1.4rem;
+    margin-bottom:1.8rem;
+}
+
+.section-corporate .redes .logo-redes img{
+    margin-right: 3.2rem;
+}
+
+ .logo-empresas{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.2rem;
+ }
+.redes .logo-empresas img{
+    margin-top:3.1rem;
+    margin-right: 2.2rem;
+}
+
+.section-corporate hr{
+    background-color: #D8D8D8;
+}
+
+
+footer{
+    width: 100%;
+
+}
+
+footer .logos-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top:3.3rem;
+    margin-bottom :1.6rem;
+}
+
+footer .parrafo{
+    font-size: 1.4rem;
+    font-weight:700;
+    color:#9B9B9B;
+}
+
