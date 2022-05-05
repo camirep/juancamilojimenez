@@ -19,8 +19,13 @@ header{
 
 header .img{
     width: 203px;
+    
 }
 
+
+.container .menu h1{
+    display:none;
+}
 header .container{
     display: flex;
     justify-content: space-around;
@@ -56,6 +61,10 @@ header .container{
     padding-right:26px;
 }
 
+.banner-title button{
+    display: none;
+}
+
 .banner-title h1{
     font-size: 2.8rem;
     font-weight: 900;
@@ -85,6 +94,19 @@ header .container{
 }
 
 
+.desktop .inputs .exepcion{
+    display:none;
+}
+
+.desktop .exepcion-dos{
+    display: block;
+}
+
+
+.calendarios .modal-ignore{
+    display: none;
+
+}
 
 .container-fluid{
     border: 2px solid #E2E8EE;
@@ -346,36 +368,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .enlace-padre .programas a img{
     margin-left: 1.5rem;
 }
-.acceso .img-enlaces{
-    background-image: url(../icon/avionjejej.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:52px;
-    height:19px;
-    margin-right:2.4rem;
-    
-}
 
-.enlace-padre .lupa{
-    background-image: url(../icon/lupa.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:58px;
-    height:21px;
-    margin-right:2.4rem;
-}
-
-.enlace-padre .contra{
-    background-image: url(../icon/start.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width:52px;
-    height:17px;
-    margin-right:2.4rem;
-}
 .informacion{
     padding: 69px 20px 69px 20px;
     width: 100%;
@@ -420,30 +413,46 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 5px;
     
 }
-
-.section-corporate{
-    background-color:#FAFAFA;
-    padding: 56px 50px 40px 40px;
+.acceso .titulo{
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 700;
+    margin-bottom: 5.8rem;
 }
 
-.section-corporate h1 {
-    font-weight:700;
-    font-size: 2.4rem;
-    color: #DA291C;
-    margin-bottom:1.9rem;
-    margin-top: 2.4rem;
+.acceso .acceso-padre .card-content h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1.6rem;
 }
 
-.section-corporate p{
-    font-weight:400;
+.acceso .acceso-padre .card-content p{
     font-size: 1.4rem;
-    margin-bottom:1.8rem;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
 }
 
-.section-corporate .redes .logo-redes img{
-    margin-right: 3.2rem;
+.acceso .acceso-padre .card-content a{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #96172E;
+    
 }
 
+.card-content a img {
+    margin-left: 1.5rem;
+}
+.acceso-cards .cardes{
+    display: flex;
+    margin: 20px;
+    margin-bottom: 4.8rem;
+
+}
+
+.cardes img{
+    margin-right: 2.4rem;
+    
+}
  .logo-empresas{
     display: flex;
     justify-content: space-between;
@@ -475,5 +484,45 @@ footer .parrafo{
     font-size: 1.4rem;
     font-weight:700;
     color:#9B9B9B;
+    margin-bottom:5.4rem;
+}
+
+
+.section-corporate .padre-corporate .hijo-corporate h1{
+    font-weight: 700;
+    font-size: 2.4rem;
+    color:#DA291C;
+    margin-bottom:1.9rem;
+}
+
+.section-corporate .padre-corporate .hijo-corporate p{
+    font-size: 1.4rem;
+    font-weight:400;
+    margin-bottom:1rem;
+}
+
+
+.padre-corporate{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3rem;
+}
+
+.redes{
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.redes h1{
+    font-weight: 700;
+    font-size: 2.4rem;
+    color:#DA291C;
+    margin-bottom:1.9rem;
+}
+
+.redes .logo-redes{
+    display: flex;
+    justify-content: space-between;
 }
 

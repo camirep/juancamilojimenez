@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Avianca</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tablet.css" media="(min-width:425px)" >
+    <link rel="stylesheet" href="css/desktop.css" media="(min-width:768px)" >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,25 +18,40 @@
     <header>
         <div class="container">
             <img class="img" src="icon/logo.png" alt="">
+            
+            
             <div class="menu">
                 <img src="icon/Vector.png" alt="">
+                <div class="flex">
+                    <h1>El programa</h1>
+                    <h1>Inscripción</h1>
+                </div>
+                
             </div>
         </div>
     </header>
 
     <main>
         <section class="banner">
-            <div class="banner-img">
-                <div class="banner-title">
-                    <h1>Volamos para que tú puedas volar.</h1>
-                    <h2>Avianca Corporate organiza todo lo que necesitas para tu viaje.</h2>
+            <div>
+                <div class="banner-img">
+                    <div class="banner-title">
+                        <h1>Volamos para que tú puedas volar.</h1>
+                        <h2>Avianca Corporate organiza todo lo que necesitas para tu viaje.</h2>
+                        <button>Participa en la rifa</button>
+                    </div>
                 </div>
             </div>
+            
         </section>
 
         <section class="buscador">
+            
             <div class="container-fluid">
-                <h1>Busca tu vuelo</h1>
+                <div class="parrafito">
+                    <h1>Busca tu vuelo</h1>
+                </div>
+                
                 <form action="#">
                     <div class="radios">
                         <input type="radio">
@@ -47,30 +64,59 @@
                         <label for="idaYregreso" id="label">Varias ciudades</label>
                     </div>
 
-                    <div class="inputs">
-                        <label for="Desde">Desde</label>
-                    <input type="text" placeholder="Bogotá D.C. (BOG)" class="input-group">
 
-                    <div class="imagen-cambio">
-                        <img src="icon/Arrow.png" alt="">
+
+                    <div  class="desktop">
+                            <div class="inputs">
+                                <div>
+                                    <label for="Desde">Desde</label>
+                                    <input type="text" placeholder="Bogotá D.C. (BOG)" class="input-group">
+                                </div>
+                                
+        
+                            <div class="imagen-cambio">
+                                <img src="icon/Arrow.png" alt="">
+                            </div>
+                            
+                            
+                            <div>
+                                <label for="Destino" >Destino</label>
+                                <input type="text" placeholder="Dallas (DFW)" class="input-group">
+                            </div>
+                       
+                            <div class="exepcion">
+                                <label for="PasajerosyClase">Pasajeros y Clase</label>
+                                <input type="text" class="input-group" placeholder="1 adulto, económica.">
+                            </div>
                     </div>
                     
-    
-                    <label for="Destino" >Destino</label>
-                    <input type="text" placeholder="Dallas (DFW)" class="input-group">
-    
-                    <label for="PasajerosyClase">Pasajeros y Clase</label>
+                    <div class="exepcion-dos">
+                        <label for="PasajerosyClase">Pasajeros y Clase</label>
                     <input type="text" class="input-group" placeholder="1 adulto, económica.">
-    
-                    <label for="FechadeSalida">Fecha de Salida</label>
-                    <input type="date" class="input-group">
-    
-                    <label for="FechadeRegreso">Fecha de Regreso</label>
-                    <input type="date" class="input-group">
+                    </div>
+                    
+
+                    <div class="calendarios">
+                        <div class="margin-calendarios">
+                            <label for="FechadeSalida">Fecha de Salida</label>
+                            <input type="date" class="input-group">
+                        </div>
+            
+                        <div  class="margin-calendarios">
+                            <label for="FechadeRegreso">Fecha de Regreso</label>
+                            <input type="date" class="input-group">
+                        </div>
+
+                        <div class="modal-ignore">
+                            <a href="#" class="ancla"><img src="./icon/Textto.png" alt="" id="img-circle">  Tengo un código promocional</a> 
+                        </div>
+                    </div>
                     </div>
 
-
-                    <a href="#" class="ancla"><img src="./icon/Textto.png" alt="" id="img-circle">  Tengo un código promocional</a> 
+                    <div class="modal">
+                        <a href="#" class="ancla"><img src="./icon/Textto.png" alt="" id="img-circle">  Tengo un código promocional</a> 
+                    </div>
+                    
                     <button class="boton">Busca tu vuelo </button>
                 </form>
             </section>
@@ -207,108 +253,131 @@
             </section>
 
             <section class="acceso">
-                <div class="title-acceso">
-                    <h1>Accesos directos</h1>
-                </div>
-
-
-                <div class="enlace-padre">
-                    <div class="img-enlaces">
-
-                    </div>
+                <h1 class="titulo">Accesos directos</h1>
+                <div class="acceso-padre">
+                    <div class="acceso-cards">
+                        <div class="cardes">
+                            <div >
+                                <img src="icon/avionjejej.png" alt="">
+                            </div>
     
-                    <div class="programas">
-                        <h1>Conozca sobre el programa</h1>
-                        <p>Avianca Corporate ofrece beneficios y precios especiales para empresas con viajes frecuentes.</p>
-                        <a href="#" >Más sobre el programa <img src="icon/flecha.png" alt=""></a>
+                            <div class="card-content">
+                                <h1>Conozca sobre el programa</h1>
+                                <p>Avianca Corporate ofrece beneficios y precios especiales para empresas con viajes frecuentes.</p>
+                                <a href="#">Más sobre el programa <img src="icon/flecha.png"class="flechita" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-
-                <div class="enlace-padre">
-                    <div class="lupa">
-
-                    </div>
+                    <div class="acceso-cards">
+                        <div class="cardes">
+                            <div >
+                                <img src="icon/lupa.png" alt="">
+                            </div>
     
-                    <div class="programas">
-                        <h1>Cómo pertenecer al programa</h1>
-                        <p>Conoce los requerimientos mínimos para que accedas a los beneficios que ofrece Avianca Corporate</p>
-                        <a href="#" >Conoce más del programa <img src="icon/flecha.png"  alt=""></a>
+                            <div class="card-content">
+                                <h1>Cómo pertenecer al programa</h1>
+                                <p>Conoce los requerimientos mínimos para que accedas a los beneficios que ofrece Avianca Corporate</p>
+                                <a href="#">Más sobre el programa <img src="icon/flecha.png"class="flechita" alt=""></a>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="enlace-padre">
-                    <div class="contra">
-
-                    </div>
+                    <div class="acceso-cards">
+                        <div class="cardes">
+                            <div >
+                                <img src="icon/start.png" alt="">
+                            </div>
     
-                    <div class="programas">
-                        <h1>Obtenga su contraseña web</h1>
-                        <p>Si aún no recibe su contraseña, o la olvidó, la puede solicitar de nuevo aquí.</p>
-                        <a href="#" >Solicitar contraseña<img src="icon/flecha.png"  alt=""></a>
+                            <div class="card-content">
+                                <h1>Obtenga su contraseña web</h1>
+                                <p>Si aún no recibe su contraseña, o la olvidó, la puede solicitar de nuevo aquí.</p>
+                                <a href="#">Solicitar contraseña<img src="icon/flecha.png"class="flechita" alt=""></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
             </section>
 
             <section class="informacion">
                 <div class="title-informacion">
                     <h1 class="title-h1">Ten en cuenta</h1>
                 </div>
-                <div class="container-info">
-                    <div class="targeta-info">
-                        <h1>Restricciones de Viajes</h1>
-                        <p>Revisa si tu destino tiene restricciones de viaje o exigencias de Pruebas de Covid-19, que pueden impactar tu viaje.</p>
-                        <button>Conocer las restricciones de viajes</button>
-                    </div>
-                </div>
-
-
-                <div class="container-info">
-                    <div class="targeta-info">
-                        <h1>Habla con un Ejecutivo Comercial</h1>
-                        <p>Si ya tienes tienes una Cuenta Corporativa, puedes hablar directamente con nuestros Ejecutivos Comerciales.</p>
-                        <button>Conocer las restricciones de viajes</button>
-                    </div>
-                </div>
-
-
-                <div class="container-info">
-                    <div class="targeta-info">
-                        <h1>Prueba PCR (Covid-19) incluida en tu tarifa </h1>
-                        <p>Si uno de los destinos a los que viajes exige una prueba PCR para el Covid-19, nosotros te hacemos la vida más fácil. Nos aliamos con SynLab para que viajes tranquilo, descubre todos los beneficios que trae tu talla. </p>
-                        <button>Conoce los detalles de la Prueba PCR</button>
-                    </div>
-                </div>
                 
+                
+                <div class="padre-ten">
+                    <div class="ten">   
+                        <div class="container-info">
+                            <div class="targeta-info">
+                                <h1>Restricciones de Viajes</h1>
+                                <p>Revisa si tu destino tiene restricciones de viaje o exigencias de Pruebas de Covid-19, que pueden impactar tu viaje.</p>
+                                <button>Conocer las restricciones de viajes</button>
+                            </div>
+                        </div>
+        
+        
+                        <div class="container-info">
+                            <div class="targeta-info">
+                                <h1>Habla con un Ejecutivo Comercial</h1>
+                                <p>Si ya tienes tienes una Cuenta Corporativa, puedes hablar directamente con nuestros Ejecutivos Comerciales.</p>
+                                <button>Conocer las restricciones de viajes</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="container-info">
+                        <div class="targeta-info">
+                            <h1>Prueba PCR (Covid-19) incluida en tu tarifa </h1>
+                            <p>Si uno de los destinos a los que viajes exige una prueba PCR para el Covid-19, nosotros te hacemos la vida más fácil. Nos aliamos con SynLab para que viajes tranquilo, descubre todos los beneficios que trae tu talla. </p>
+                            <button>Conoce los detalles de la Prueba PCR</button>
+                        </div>
+                    </div>
+
+
+                </div>
             </section>
                 
 
             <section class="section-corporate"> 
-                <h1>Avianca Corporate</h1>
-                <p>El programa Corporate</p>
-                <p>Inscripción</p>
-                <p>Otras soluciones empresariales</p>
-                <p>Direct Connect </p>
-                <p>Servicios de viaje</p>
-                <p>Cómo pertenecer al programa</p>
-                <p>Obtenga su contraseña web</p>
-                <p>Solicite su PIN</p>
-                <h1>Conócenos</h1>
-                <p>Sobre nosotros</p>
-                <p>Contáctanos</p>
-                <p>Alianzas y beneficios</p>
-                <p>Direct Connect </p>
-                <p>Nuestra red de servicios</p>
-                <p>Relación con inversionistas</p>
-                <p>Mapa del Sitio </p>
-                <p>Avianca Express</p>
-                <h1>Legales</h1>
-                <p>Términos y condiciones</p>
-                <p>Política de privacidad</p>
-                <p>Política de cookies</p>
-                <p>Cargos por servicios opcionales</p>
-                <p>Contrato de transporte</p>
-                <p>Plan de contingencia</p>
+                <div class="padre-corporate">
+                    <div class="hijo-corporate">
+                        <h1>Avianca Corporate</h1>
+                        <p>El programa Corporate</p>
+                        <p>Inscripción</p>
+                        <p>Otras soluciones empresariales</p>
+                        <p>Direct Connect </p>
+                        <p>Servicios de viaje</p>
+                        <p>Cómo pertenecer al programa</p>
+                        <p>Obtenga su contraseña web</p>
+                        <p>Solicite su PIN</p>
+                    </div>
+    
+                    <div class="hijo-corporate">
+                        <h1>Conócenos</h1>
+                        <p>Sobre nosotros</p>
+                        <p>Contáctanos</p>
+                        <p>Alianzas y beneficios</p>
+                        <p>Direct Connect </p>
+                        <p>Nuestra red de servicios</p>
+                        <p>Relación con inversionistas</p>
+                        <p>Mapa del Sitio </p>
+                        <p>Avianca Express</p>
+                    </div>
+                    
+                    <div class="hijo-corporate">
+                        <h1>Legales</h1>
+                        <p>Términos y condiciones</p>
+                        <p>Política de privacidad</p>
+                        <p>Política de cookies</p>
+                        <p>Cargos por servicios opcionales</p>
+                        <p>Contrato de transporte</p>
+                        <p>Plan de contingencia</p>
+                    </div>
+                </div>
+                
+                
 
                 <div class="redes">
                     <h1>Síguenos</h1>
@@ -324,9 +393,8 @@
                         <img src="icon/nose.png" alt="">
                         <img src="icon/logojejejejejjej.png" alt="">
                     </div>
-                </div>
 
-                <hr>
+                    <hr>
 
                 <footer>
                     <div class="logos-footer">
@@ -336,6 +404,7 @@
                     </div>
                     <p class="parrafo">Avianca .A. - 2020 Copyright © Todos los derechos reservados. NIT 890.100.577-6. RNT 20175</p>
                 </footer>
+                </div>
             </section>
     </main>
 </body>
